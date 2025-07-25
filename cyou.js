@@ -1,7 +1,5 @@
 const loc = window.location.search;
 const videonum = document.getElementById("ply");
-console.log(loc);
-document.querySelector("#ply").src;
 
 switch (loc) {
   case "?video=1":
@@ -20,6 +18,17 @@ function reload() {
   (location || window.location || document.location).reload();
   console.log("리로드!!");
 }
+
+const profilebutton = document.getElementById("profile_bt");
+const profilehead = document.getElementById("profile_head");
+
+profilebutton.addEventListener("click", function () {
+  if (profilehead.style.display === "none") {
+    profilehead.style.display = "block";
+  } else {
+    profilehead.style.display = "none";
+  }
+});
 
 /*
 vn.innerHTML = (

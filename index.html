@@ -3,60 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>main</title>
+    <title>cloneyotube</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <nav class="top_nav">
       <div class="logo">
-        <img class="logo_img" src="./image/youtubelogo.PNG" alt="" onClick="reload()">
+        <a href="#" onClick="reload()"><img class="logo_img" src="./image/ylogo.PNG" alt=""> </a>
       </div>
-      <form class="searchbox" action="" method="get">
-        <input
+      <div class="textbox">
+       <input
           type="text"
           name="searchtext"
           class="searchtext"
           id="searchtext"
-          placeholder="검색"
+          placeholder="검색                                "
         />
-        <button type="submit" class="search_btn" title="검색">&#8801</button>
-      </form>
-      <div class="mic_btn">
-        <img src="./image/mic.PNG" alt="">
       </div>
-      <div class="ball_btn">
-        <img src="./image/ball.PNG" alt="">
+      <div>
+      <button type="submit" class="search_btn" title="검색">
+        <i class="fas fa-search"></i>
+      </button>
       </div>
+      <button class="mic_btn" title="검색">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+      <div class="blank_di"></div>
+      <button class="ball_btn" >
+        <i class="fa-regular fa-bell"></i>
+      </button>
       <div class="profile_btn">
-        <img src="./image/profile.PNG" alt="">
+          <img class="profileimg" src="./image/prof.PNG" alt="" id="profile_bt">
       </div>
     </nav>
+    <div class="profile_head" id="profile_head">
+      <a href="#"><img src="./image/profile/pro1.PNG" alt=""></a>
+        <nav class="profile_list">
+        <ul>
+          <li><hr><a href="#"><img src="./image/profile/pro2.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro3.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro4.PNG" alt=""></a></li>
+          <li><hr><a href="#"><img src="./image/profile/pro5.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro6.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro7.PNG" alt=""></a></li>
+          <li><hr><a href="#"><img src="./image/profile/pro8.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro9.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro10.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro11.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro12.PNG" alt=""></a></li>
+          <li><hr><a href="#"><img src="./image/profile/pro13.PNG" alt=""></a></li>
+          <li><hr><a href="#"><img src="./image/profile/pro14.PNG" alt=""></a></li>
+        </ul>
+        </nav>
+    </div>
+    </div>
       <input type="checkbox" id="side_btn"/>
       <label for="side_btn" class="side_icon">&#8801</label>
       <label for="side_btn" class="closer"></label>
     <nav class="side_nav">
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
+        <li><a href="http://127.0.0.1:3000/index.html"><img src="./image/side/side1.PNG" alt="홈"></a></li>
+        <li><a href="./feed.html"><img src="./image/side/side2.PNG" alt="구독"></a></li>
+        <li><a href="#"><img src="./image/side/side3.PNG" alt="내페이지"></a></li>
+        <li><a href="#"><img src="./image/side/side4.PNG" alt="시청기록"></a></li>
+        <li><a href="#"><img src="./image/side/side5.PNG" alt="재생목록"></a></li>
+        <li><a href="#"><img src="./image/side/side6.PNG" alt="내동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side7.PNG" alt="나중에볼동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side8.PNG" alt="좋아요표시한동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side9.PNG" alt="구독"></a></li>
+        <li><a href="#"><img src="./image/side/side10.PNG" alt="보다BODA"></a></li>
+        <li><a href="#"><img src="./image/side/side11.PNG" alt=""></a></li>
       </ul>
     </nav>
     <nav class="off_nav">
+      <img class="logo_img2" src="./image/ylogo.PNG" alt="" onClick="reload()">
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
+        <li><a href="http://127.0.0.1:3000/index.html"><img src="./image/side/side1.PNG" alt="홈"></a></li>
+        <li><a href="./feed.html"><img src="./image/side/side2.PNG" alt="구독"></a></li>
+        <li><a href="#"><img src="./image/side/side3.PNG" alt="내페이지"></a></li>
+        <li><a href="#"><img src="./image/side/side4.PNG" alt="시청기록"></a></li>
+        <li><a href="#"><img src="./image/side/side5.PNG" alt="재생목록"></a></li>
+        <li><a href="#"><img src="./image/side/side6.PNG" alt="내동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side7.PNG" alt="나중에볼동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side8.PNG" alt="좋아요표시한동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side9.PNG" alt="구독"></a></li>
+        <li><a href="#"><img src="./image/side/side10.PNG" alt="보다BODA"></a></li>
+        <li><a href="#"><img src="./image/side/side11.PNG" alt=""></a></li>
       </ul>
     </nav>
     <section class="cards">
       <article class="card">
-        <a href="video.html?video=1" onclick="click_(asdasd)">
+        <a href="video.html?video=1">
           <img
             id="video1"
             src="https://cdn.pixabay.com/photo/2025/07/12/09/37/gull-9710092_1280.jpg"
@@ -98,7 +136,27 @@
         </div>
       </article>
       <article class="card">
-        <a href="video.html#video=1">
+        <a href="video.html?video=3">
+          <img src="./image/mainthumbnail/thumbnail3.jpg" alt="" />
+        </a>
+        <div class="content1">
+          <p>
+            커피내기는 못참치! (쿠키있쯤)
+          </p>
+        </div>
+        <div class="content2">
+          <p>
+            정서불안 김햄찌
+          </p>
+        </div>
+        <div class="content3">
+          <p>
+            조회수 75만회  1개월 전
+          </p>
+        </div>
+      </article>
+      <article class="card">
+        <a href="video.html?video=4">
           <img src="" alt="" />
         </a>
         <div class="content1">
@@ -115,8 +173,62 @@
           <p>IVE 조회수 221만회 2일 전</p>
         </div>
       </article>
-      <article class="card">
-        <a href="video.html#video=1">
+            <article class="card">
+        <a href="video.html?video=5">
+          <img src="" alt="" />
+        </a>
+        <div class="content1">
+          <p>
+            [전지적 참견 시점 357회 예고] 올데이 프로젝트의 숙소 생활 대공개🖤 &
+            곧 30주년! 레전드 혼성 그룹 코요태의 장수 비결은?!💝, MBC 250726
+            방송
+          </p>
+        </div>
+        <div class="content2">
+          <p>IVE</p>
+        </div>
+        <div class="content3">
+          <p>IVE 조회수 221만회 2일 전</p>
+        </div>
+      </article>
+            <article class="card">
+        <a href="video.html?video=6">
+          <img src="" alt="" />
+        </a>
+        <div class="content1">
+          <p>
+            [전지적 참견 시점 357회 예고] 올데이 프로젝트의 숙소 생활 대공개🖤 &
+            곧 30주년! 레전드 혼성 그룹 코요태의 장수 비결은?!💝, MBC 250726
+            방송
+          </p>
+        </div>
+        <div class="content2">
+          <p>IVE</p>
+        </div>
+        <div class="content3">
+          <p>IVE 조회수 221만회 2일 전</p>
+        </div>
+      </article>
+            <article class="card">
+        <a href="video.html?video=7">
+          <img src="" alt="" />
+        </a>
+        <div class="content1">
+          <p>
+            [전지적 참견 시점 357회 예고] 올데이 프로젝트의 숙소 생활 대공개🖤 &
+            곧 30주년! 레전드 혼성 그룹 코요태의 장수 비결은?!💝, MBC 250726
+            방송
+          </p>
+        </div>
+        <div class="content2">
+          <p>IVE</p>
+        </div>
+        <div class="content3">
+          <p>IVE 조회수 221만회 2일 전</p>
+        </div>
+      </article>
+            <article class="card">
+        <a href="video.html?video=8">
           <img src="" alt="" />
         </a>
         <div class="content1">
