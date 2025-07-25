@@ -8,37 +8,89 @@
   </head>
   <body>
       <nav class="top_nav">
-      <form class="logo">
-        <button class="logo_btn" type="button" onClick="reload()">로고</button>
-      </form>
-      <form class="searchbox" action="" method="get">
-        <input
+      <div class="logo">
+        <a href="./index.html" onClick="reload()"><img class="logo_img" src="./image/ylogo.PNG" alt=""> </a>
+      </div>
+      <div class="textbox">
+       <input
           type="text"
           name="searchtext"
           class="searchtext"
           id="searchtext"
-          placeholder="검색"
+          placeholder="검색                                "
         />
-        <button type="submit" class="search_btn" title="검색">검색버튼</button>
-      </form>
-      <div class="mic_btn">음성버튼</div>
-      <div class="ball_btn">알림버튼</div>
-      <div class="profile_btn">프로필버튼</div>
+      </div>
+      <div>
+      <button type="submit" class="search_btn" title="검색">
+        <i class="fas fa-search"></i>
+      </button>
+      </div>
+      <button class="mic_btn" title="검색">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+      <div class="blank_di"></div>
+      <button class="ball_btn" >
+        <i class="fa-regular fa-bell"></i>
+      </button>
+      <div class="profile_btn">
+          <img class="profileimg" src="./image/prof.PNG" alt="" id="profile_bt">
+      </div>
     </nav>
+    <div class="profile_head" id="profile_head">
+      <a href="#"><img src="./image/profile/pro1.PNG" alt=""></a>
+        <nav class="profile_list">
+        <ul>
+          <li><hr><a href="#"><img src="./image/profile/pro2.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro3.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro4.PNG" alt=""></a></li>
+          <li><hr><a href="#"><img src="./image/profile/pro5.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro6.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro7.PNG" alt=""></a></li>
+          <li><hr><a href="#"><img src="./image/profile/pro8.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro9.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro10.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro11.PNG" alt=""></a></li>
+          <li><a href="#"><img src="./image/profile/pro12.PNG" alt=""></a></li>
+          <li><hr><a href="#"><img src="./image/profile/pro13.PNG" alt=""></a></li>
+          <li><hr><a href="#"><img src="./image/profile/pro14.PNG" alt=""></a></li>
+        </ul>
+        </nav>
+    </div>
+    </div>
       <input type="checkbox" id="side_btn"/>
       <label for="side_btn" class="side_icon">&#8801</label>
       <label for="side_btn" class="closer"></label>
-     <nav class="off_nav">
+    <nav class="side_nav">
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
+        <li><a href="./index.html" onClick="reload()"><img src="./image/side/side1.PNG" alt="홈"></a></li>
+        <li><a href="./feed.html"><img src="./image/side/side2.PNG" alt="구독"></a></li>
+        <li><a href="#"><img src="./image/side/side3.PNG" alt="내페이지"></a></li>
+        <li><a href="#"><img src="./image/side/side4.PNG" alt="시청기록"></a></li>
+        <li><a href="#"><img src="./image/side/side5.PNG" alt="재생목록"></a></li>
+        <li><a href="#"><img src="./image/side/side6.PNG" alt="내동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side7.PNG" alt="나중에볼동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side8.PNG" alt="좋아요표시한동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side9.PNG" alt="구독"></a></li>
+        <li><a href="#"><img src="./image/side/side10.PNG" alt="보다BODA"></a></li>
+        <li><a href="#"><img src="./image/side/side11.PNG" alt=""></a></li>
       </ul>
     </nav>
-
+    <nav class="off_nav">
+      <img class="logo_img2" src="./image/ylogo.PNG" alt="" onClick="reload()">
+      <ul>
+        <li><a href="./index.html" onClick="reload()"><img src="./image/side/side1.PNG" alt="홈"></a></li>
+        <li><a href="./feed.html"><img src="./image/side/side2.PNG" alt="구독"></a></li>
+        <li><a href="#"><img src="./image/side/side3.PNG" alt="내페이지"></a></li>
+        <li><a href="#"><img src="./image/side/side4.PNG" alt="시청기록"></a></li>
+        <li><a href="#"><img src="./image/side/side5.PNG" alt="재생목록"></a></li>
+        <li><a href="#"><img src="./image/side/side6.PNG" alt="내동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side7.PNG" alt="나중에볼동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side8.PNG" alt="좋아요표시한동영상"></a></li>
+        <li><a href="#"><img src="./image/side/side9.PNG" alt="구독"></a></li>
+        <li><a href="#"><img src="./image/side/side10.PNG" alt="보다BODA"></a></li>
+        <li><a href="#"><img src="./image/side/side11.PNG" alt=""></a></li>
+      </ul>
+    </nav>
     <!-- 위부분은 메인페이지에서 sidenav만 제거 후 최신화예정-->
     
     <section class="player" if="plt">
