@@ -4,11 +4,27 @@ const videonum = document.getElementById("ply");
 switch (loc) {
   case "?video=1":
     document.querySelector("#ply").src =
-      "https://www.youtube.com/embed/_roRB6X-1eU?si=BsK01nhiGxruHuhC";
+      "https://www.youtube.com/embed/8Cx3Glnj59o?si=siwCOKnHtHQekE_p";
+    const videoinfo = document.querySelector("#info");
+    const videoinfofo = document.querySelector("#infotext");
+    const videocoment = document.querySelector("#comment");
+    console.log(videoinfo);
+    videoinfo.classList.add("infoblock");
+    console.log(videoinfofo);
+    videoinfofo.classList.add("infoblock2");
+    videocoment.classList.add("infoblock3");
     break;
   case "?video=2":
     document.querySelector("#ply").src =
-      "https://www.youtube.com/embed/_roRB6X-1eU?si=BsK01nhiGxruHuhC";
+      "https://www.youtube.com/embed/AI0MS-3D_co?si=n2CJoKZFUKDfLTIN";
+    const videoinfo2 = document.querySelector("#info2");
+    videoinfo2.classList.add("infoblock");
+    const videoinfofo2 = document.querySelector("#infotext2");
+    const videocoment2 = document.querySelector("#comment2");
+    videoinfofo2.classList.add("infoblock2");
+    videocoment2.classList.add("infoblock3");
+    break;
+  case "?video=3":
     break;
   default:
     console.log("입력값이 없어요");
