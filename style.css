@@ -259,10 +259,7 @@ body {
 .info {
   background-color: crimson;
   display: none;
-}
-
-.infoblock {
-  display: block;
+  margin-right: 20px;
 }
 
 .infoflex {
@@ -370,10 +367,7 @@ body {
 .infotext {
   display: none;
   background-color: red;
-}
-
-.infoblock2 {
-  display: block;
+  margin-right: 20px;
 }
 
 .infotext a {
@@ -381,12 +375,75 @@ body {
 }
 
 .comment {
-  display: none;
-  grid-template-columns: 10% 90%;
+  margin-right: 20px;
   background-color: cadetblue;
 }
-.infoblock3 {
-  display: block;
+.commentinput {
+  margin-right: 20px;
+}
+
+.commentimg {
+  float: left;
+  vertical-align: top;
+}
+.commenttext {
+  vertical-align: top;
+  margin-left: 5px;
+  width: 85%;
+  font-size: 18px;
+  background-color: black;
+  resize: none;
+  color: white;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  border-bottom: 2px solid gray;
+}
+.commenttext:focus {
+  border-bottom: 2px solid white;
+}
+
+.commentbt {
+  text-align: end;
+  margin-left: 60px;
+  width: 85%;
+  left: 20px;
+  background-color: aqua;
+}
+.commentlist {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.rimg {
+  float: left;
+}
+
+.rdiv {
+  color: white;
+  float: right;
+  margin-right: 45px;
+}
+.rp {
+  margin-left: 52px;
+  width: 82%;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+.commentul2 li img {
+  float: left;
+}
+.commentul2 li p {
+  margin-left: 52px;
+  width: 82%;
+  overflow-wrap: break-word;
+  color: white;
+}
+.commentul2 li div {
+  color: white;
+  float: right;
+  margin-right: 45px;
 }
 
 .playlist {
@@ -486,4 +543,19 @@ body {
   .infobtlists2 {
     display: none;
   }
+  .video {
+    margin-right: 0px;
+  }
+  .info {
+    margin-right: 0px;
+  }
+  .infotext {
+    margin-right: 0px;
+  }
+  .comment {
+    margin-right: 0px;
+  }
+}
+.infoblock {
+  display: block;
 }

@@ -1,5 +1,6 @@
 const loc = window.location.search;
 const videonum = document.getElementById("ply");
+const texta = document.querySelector("#commenttext");
 
 switch (loc) {
   case "?video=1":
@@ -7,22 +8,16 @@ switch (loc) {
       "https://www.youtube.com/embed/8Cx3Glnj59o?si=siwCOKnHtHQekE_p";
     const videoinfo = document.querySelector("#info");
     const videoinfofo = document.querySelector("#infotext");
-    const videocoment = document.querySelector("#comment");
-    console.log(videoinfo);
     videoinfo.classList.add("infoblock");
-    console.log(videoinfofo);
-    videoinfofo.classList.add("infoblock2");
-    videocoment.classList.add("infoblock3");
+    videoinfofo.classList.add("infoblock");
     break;
   case "?video=2":
     document.querySelector("#ply").src =
       "https://www.youtube.com/embed/AI0MS-3D_co?si=n2CJoKZFUKDfLTIN";
     const videoinfo2 = document.querySelector("#info2");
-    videoinfo2.classList.add("infoblock");
     const videoinfofo2 = document.querySelector("#infotext2");
-    const videocoment2 = document.querySelector("#comment2");
-    videoinfofo2.classList.add("infoblock2");
-    videocoment2.classList.add("infoblock3");
+    videoinfo2.classList.add("infoblock");
+    videoinfofo2.classList.add("infoblock");
     break;
   case "?video=3":
     break;
@@ -46,23 +41,45 @@ profilebutton.addEventListener("click", function () {
   }
 });
 
-/*
-vn.innerHTML = (
-  <iframe
-    id="ply"
-    width="1200"
-    height="800"
-    src="https://www.youtube.com/embed/AuaABDWFs_8?si=GEV4568DR0qsGlut"
-    title="음악"
-  ></iframe>
-);
+try {
+  texta.addEventListener("input", function () {
+    this.style.height = "auto";
+    this.style.height = this.scrollHeight + "px";
+    if (texta.value) {
+      document.getElementById("combt").disabled = false;
+    } else {
+      document.getElementById("combt").disabled = true;
+    }
+  });
+} catch (error) {
+  console.error("메인페이지에선 동작안함"); // 에러 메시지 출력
+}
 
-document.getElementById("ply").innerHTML = (
-  <iframe
-    id="ply"
-    width="1200"
-    height="800"
-    src="https://www.youtube.com/embed/AuaABDWFs_8?si=GEV4568DR0qsGlut"
-    title="음악"
-  ></iframe>
-);*/
+function commentcnt() {}
+
+function commentsb() {
+  const savetext = document.querySelector("#commenttext").value;
+  document.querySelector("#commenttext").value = "";
+  document.getElementById("combt").disabled = true;
+  document.activeElement.blur();
+  document.querySelector("#commentlist").innerHTML =
+    "<li>" +
+    '<img class="rimg" src="./image/profile.PNG">' +
+    '<div class ="rdiv">' +
+    '<i class="fa-solid fa-ellipsis-vertical">' +
+    "</i>" +
+    "</div>" +
+    '<p class ="rp">' +
+    "JYKIM" +
+    "</p>" +
+    '<p class ="rp">' +
+    savetext +
+    "</p>" +
+    "</li>" +
+    document.querySelector("#commentlist").innerHTML;
+}
+function refresharea() {
+  document.querySelector("#commenttext").value = "";
+  document.getElementById("combt").disabled = true;
+  document.activeElement.blur();
+}

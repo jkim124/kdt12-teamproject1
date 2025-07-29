@@ -87,8 +87,9 @@
         height="100%" 
         src="" 
         title="YouTube video player"
-        allow="autoplay" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         frameborder="0" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
         >
       </iframe>
       </article>
@@ -118,11 +119,7 @@
         <a href="#">1번 #playlist #여름노래 #제이팝</a>
         <p>1번 다양한 장르의 제이팝 음악 플레이리스트 입니다.</p> <!--더보기 구현을 해야할까..?-->
       </article>
-      <article class="comment" id="comment">
-        <div><p>댓글 3개</p></div>
-        <textarea name="comment_area" id="comment_area"></textarea>
-        <div>a<p>sdsdsdsdsdsdsdsdsdsd</p></div>
-      </article>
+      
       <!--인포부분 no2-->
         <article class="info" id="info2">
         <p class="infot">2번비디오제목부분</p>  
@@ -135,7 +132,6 @@
           </div>
           <p>구독버튼</p>
           </div>
-
           <div class="infobtlists2">
           <p>좋아요 버튼</p>
           <p>싫어요 버튼</p>
@@ -150,11 +146,41 @@
         <a href="#">2번 #playlist #여름노래 #제이팝</a>
         <p>2번 다양한 장르의 제이팝 음악 플레이리스트 입니다.</p> <!--더보기 구현을 해야할까..?-->
       </article>
-      <article class="comment" id="comment2">
-        <div><p>댓글 6개</p></div>
-        <textarea name="comment_area" id="comment_area"></textarea>
-        <div>a<p>2번 댓글</p></div>
+
+      <!--댓글 입력부분 -->
+      <article class="comment" id="comment">
+        <div class="commentcount"><p>댓글</p></div>
+        <div class="commentinput">
+        <img class="commentimg" src="./image/profile.PNG" alt="">
+        <textarea class="commenttext" id="commenttext" rows="1"></textarea>
+        <div class="commentbt"><button class="comcl" onclick="refresharea()">취소</button><button class="combt" id="combt" disabled = true onclick = "commentsb()">댓글</button></div>
+        </div>
+        <div class="commentlist" id="commentlist">
+          <ul class="commentul" id="commentul">
+             <li>
+              <img class="rimg" src="./image/profile.PNG">
+              <div class ="rdiv"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+              <p class ="rp">css 직접입력</p>
+              <p class ="rp">첫번째서만 보이는 댓글</p>
+            </li>
+          </ul>
+          <ul class="commentul2" id="commentul2">
+            <li id="comli1">
+              <img src="./image/profile.PNG" alt="">
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+              <p>아이디</p>
+              <p>첫번째서만 보이는 댓글</p>
+            </li>
+            <li id="comli2">
+              <img src="./image/profile.PNG" alt="">
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+              <p>아이디</p>
+              <p>두번째서만 보이는 댓글</p>
+            </li>
+          </ul>
+        </div>
       </article>
+
       <!--우측 플레이 리스트부분 -->
       <article class="playlist">
         <div class="play_item">
