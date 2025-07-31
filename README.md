@@ -1,6 +1,13 @@
 # kdt12-teamproject1 (YouTube Clone)
 
      진행사항
+- 7-31
+- index 페이지
+  -- 컨텐츠 삽입
+- feed 페이지 제작
+  -- 컨텐츠 정렬 필요
+- video 페이지
+  -- 댓글 및 영상정보 버튼 CSS정리
 - 7-30
 - index 페이지
   -- 컨텐츠 삽입

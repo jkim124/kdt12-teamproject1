@@ -39,7 +39,7 @@ switch (loc) {
     break;
   case "?video=5":
     document.querySelector("#ply").src =
-      "https://www.youtube.com/embed/BsZAsGu_tnM?autoplay=1&mute=0";
+      "https://www.youtube.com/embed/PMTSstSfwzk?autoplay=1&mute=0";
     const videoinfo5 = document.querySelector("#info5");
     const videoinfofo5 = document.querySelector("#infotext5");
     videoinfo5.classList.add("infoblock");
@@ -47,7 +47,7 @@ switch (loc) {
     break;
   case "?video=6":
     document.querySelector("#ply").src =
-      "https://www.youtube.com/embed/BsZAsGu_tnM?autoplay=1&mute=0";
+      "https://www.youtube.com/embed/dUXOHNHszfU?autoplay=1&mute=0";
     const videoinfo6 = document.querySelector("#info6");
     const videoinfofo6 = document.querySelector("#infotext6");
     videoinfo6.classList.add("infoblock");
@@ -55,7 +55,7 @@ switch (loc) {
     break;
   case "?video=7":
     document.querySelector("#ply").src =
-      "https://www.youtube.com/embed/BsZAsGu_tnM?autoplay=1&mute=0";
+      "https://www.youtube.com/embed/c-ufViauofo?autoplay=1&mute=0";
     const videoinfo7 = document.querySelector("#info7");
     const videoinfofo7 = document.querySelector("#infotext7");
     videoinfo7.classList.add("infoblock");
@@ -63,7 +63,7 @@ switch (loc) {
     break;
   case "?video=8":
     document.querySelector("#ply").src =
-      "https://www.youtube.com/embed/BsZAsGu_tnM?autoplay=1&mute=0";
+      "https://www.youtube.com/embed/GQw1riwVPyU?autoplay=1&mute=0";
     const videoinfo8 = document.querySelector("#info8");
     const videoinfofo8 = document.querySelector("#infotext8");
     videoinfo8.classList.add("infoblock");
@@ -119,8 +119,8 @@ function commentsb() {
   document.querySelector("#commenttext").value = "";
   document.getElementById("combt").disabled = true;
   document.activeElement.blur();
-  document.querySelector("#commentlist").innerHTML =
-    "<li>" +
+  document.querySelector("#commentul").innerHTML =
+    '<li class="comli">' +
     '<img class="rimg" src="./image/profile.PNG">' +
     '<div class ="rdiv">' +
     '<i class="fa-solid fa-ellipsis-vertical">' +
@@ -133,7 +133,7 @@ function commentsb() {
     savetext +
     "</p>" +
     "</li>" +
-    document.querySelector("#commentlist").innerHTML;
+    document.querySelector("#commentul").innerHTML;
   texta.placeholder = "댓글 추가...";
 }
 

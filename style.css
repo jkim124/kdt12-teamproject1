@@ -113,7 +113,7 @@ body {
   margin-left: 10px;
   color: white;
   z-index: 1000;
-  padding: 2px 8px 11px 8px;
+  padding: 2px 8px 12px 8px;
 }
 .side_nav {
   position: fixed;
@@ -208,6 +208,59 @@ body {
 #profile_bt:checked ~ .closerp {
   display: none;
 }
+.feednav {
+  position: absolute;
+  display: flex;
+  top: 48px;
+  left: 200px;
+  right: 40px;
+  height: 100px;
+  color: white;
+  align-items: end;
+  background-color: black;
+}
+.feedcls {
+  font-size: 25px;
+  flex-grow: 1;
+}
+.feedbt1 {
+  margin-right: 20px;
+}
+.feedbt1 button {
+  color: deepskyblue;
+  background-color: black;
+  border: none;
+  height: 35px;
+  width: 50px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+}
+.feedbt1 button:hover {
+  background-color: lightslategrey;
+}
+
+.feedbt2 {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+.feedbt2 img {
+  margin-left: 5px;
+  margin-top: 6px;
+}
+.feedbt3 {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+.feedbt3 img {
+  margin-left: 5px;
+  margin-top: 6px;
+}
 
 .cards {
   position: absolute;
@@ -217,7 +270,19 @@ body {
   max-width: 100%;
   display: grid;
   margin: 1em auto;
-  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  grid-template-rows: minmax(100px);
+  grid-gap: 10px;
+}
+.feedcards {
+  position: absolute;
+  left: 200px;
+  right: 40px;
+  top: 150px;
+  max-width: 100%;
+  display: grid;
+  margin: 1em auto;
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
   grid-template-rows: minmax(100px);
   grid-gap: 10px;
 }
@@ -323,6 +388,7 @@ body {
   text-overflow: ellipsis;
 }
 .infonum {
+  color: gray;
   font-size: 16px;
 }
 .feedbtn {
@@ -350,9 +416,14 @@ body {
   border: none;
   border-radius: 20px 0 0 20px;
   cursor: pointer;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.2);
 }
 .likebtn i {
   font-size: 22px;
+}
+.likebtn:hover {
+  background-color: rgb(255, 255, 255, 0.4);
 }
 .hatebtn {
   height: 36px;
@@ -361,6 +432,11 @@ body {
   border: none;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+.hatebtn:hover {
+  background-color: rgb(255, 255, 255, 0.4);
 }
 .sharebtn {
   display: flex;
@@ -372,19 +448,29 @@ body {
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.2);
 }
-
+.sharebtn:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+}
 .downbtn {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   height: 36px;
   width: 136px;
   margin-left: 5px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.2);
 }
+.downbtn:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
 .eclbtn {
   height: 36px;
   width: 36px;
@@ -393,21 +479,34 @@ body {
   border-radius: 50%;
   font-size: 22px;
   cursor: pointer;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.2);
 }
-
+.eclbtn:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+}
 .infotext {
   display: none;
   margin-right: 20px;
   color: white;
 }
-
+.infotext {
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
 .infotext a {
   text-decoration: none;
   color: cornflowerblue;
 }
 
 .comment {
+  margin-top: 30px;
   margin-right: 20px;
+}
+.commentcount {
+  color: white;
+  margin-bottom: 20px;
 }
 .commentinput {
   margin-right: 20px;
@@ -440,6 +539,35 @@ body {
   width: 85%;
   left: 20px;
 }
+.comcl {
+  color: white;
+  background-color: black;
+  border: none;
+  margin-right: 20px;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+}
+.comcl:hover {
+  background-color: gray;
+}
+.combt {
+  color: black;
+  background-color: dodgerblue;
+  border: none;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+}
+.combt:hover {
+  background-color: skyblue;
+}
+.combt:disabled {
+  color: gray;
+  background-color: black;
+}
 
 .commentlist {
   margin-top: 20px;
@@ -460,6 +588,12 @@ body {
   width: 82%;
   overflow-wrap: break-word;
   color: white;
+}
+.comli {
+  margin-bottom: 10px;
+}
+.commentul2 li {
+  margin-bottom: 10px;
 }
 
 .commentul2 li img {
@@ -485,6 +619,7 @@ body {
   overflow: hidden;
 }
 .play_item {
+  display: flex;
   margin-bottom: 20px;
   height: 125px;
 }
@@ -492,13 +627,17 @@ body {
 .playlist_img {
   float: left;
   height: 115px;
-  width: 204px;
+  width: 192px;
 }
 .playlist_video {
   float: left;
   height: 120px;
-  width: 204px;
+  width: 192px;
   margin-top: -3px;
+}
+.playlistinfo {
+  flex-direction: row;
+  flex-grow: 1;
 }
 .playlist_text1 {
   display: -webkit-box;
@@ -522,6 +661,11 @@ body {
   overflow: hidden;
   color: white;
 }
+.playlistdot {
+  color: white;
+  text-align: center;
+  width: 10px;
+}
 .playlist_video {
   display: none;
 }
@@ -535,6 +679,11 @@ body {
 
 @media screen and (max-width: 1300px) {
   .downbtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .sharebtn {
     display: none;
   }
 }
@@ -567,6 +716,14 @@ body {
     left: 20px;
     right: 20px;
   }
+  .feednav {
+    left: 20px;
+    right: 20px;
+  }
+  .feedcards {
+    left: 20px;
+    right: 20px;
+  }
   .blank_di {
     display: none;
   }
@@ -589,6 +746,7 @@ body {
     margin-right: 0px;
   }
 }
+
 .infoblock {
   display: block;
 }

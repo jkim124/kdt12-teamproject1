@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <nav class="top_nav">
+     <nav class="top_nav">
       <div class="logo">
         <a href="./index.html" onClick="reload()"><img class="logo_img" src="./image/ylogo.PNG" alt=""> </a>
       </div>
@@ -26,34 +26,36 @@
         <i class="fas fa-search"></i>
       </button>
       </div>
-      <button class="mic_btn" title="검색">
+      <button class="mic_btn" title="음성으로 검색">
         <i class="fa-solid fa-microphone"></i>
       </button>
       <div class="blank_di"></div>
-      <button class="ball_btn" >
+      <button class="ball_btn"title="알림" >
         <i class="fa-regular fa-bell"></i>
       </button>
       <div class="profile_btn">
-          <img class="profileimg" src="./image/prof.PNG" alt="" id="profile_bt">
+        <input type="checkbox" class="profile_bt" id="profile_bt" checked="true"/>
+        <label for="profile_bt" class="profile_icon"><img class="profileimg" src="./image/prof.PNG" alt="" id="profile_bt"></label> 
+        <label for="profile_bt" class="closerp"></label>
       </div>
     </nav>
     <div class="profile_head" id="profile_head">
       <a href="#"><img src="./image/profile/pro1.PNG" alt=""></a>
         <nav class="profile_list">
         <ul>
-          <li><hr><a href="#"><img src="./image/profile/pro2.PNG" alt=""></a></li>
-          <li><a href="#"><img src="./image/profile/pro3.PNG" alt=""></a></li>
-          <li><a href="#"><img src="./image/profile/pro4.PNG" alt=""></a></li>
-          <li><hr><a href="#"><img src="./image/profile/pro5.PNG" alt=""></a></li>
-          <li><a href="#"><img src="./image/profile/pro6.PNG" alt=""></a></li>
-          <li><a href="#"><img src="./image/profile/pro7.PNG" alt=""></a></li>
-          <li><hr><a href="#"><img src="./image/profile/pro8.PNG" alt=""></a></li>
-          <li><a href="#"><img src="./image/profile/pro9.PNG" alt=""></a></li>
-          <li><a href="#"><img src="./image/profile/pro10.PNG" alt=""></a></li>
-          <li><a href="#"><img src="./image/profile/pro11.PNG" alt=""></a></li>
-          <li><a href="#"><img src="./image/profile/pro12.PNG" alt=""></a></li>
-          <li><hr><a href="#"><img src="./image/profile/pro13.PNG" alt=""></a></li>
-          <li><hr><a href="#"><img src="./image/profile/pro14.PNG" alt=""></a></li>
+          <li><hr><a href="./index.html"><img src="./image/profile/pro2.PNG" alt=""></a></li>
+          <li><a href="./index.html"><img src="./image/profile/pro3.PNG" alt=""></a></li>
+          <li><a href="./index.html"><img src="./image/profile/pro4.PNG" alt=""></a></li>
+          <li><hr><a href="./index.html"><img src="./image/profile/pro5.PNG" alt=""></a></li>
+          <li><a href="./index.html"><img src="./image/profile/pro6.PNG" alt=""></a></li>
+          <li><a href="./index.html"><img src="./image/profile/pro7.PNG" alt=""></a></li>
+          <li><hr><a href="./index.html"><img src="./image/profile/pro8.PNG" alt=""></a></li>
+          <li><a href="./index.html"><img src="./image/profile/pro9.PNG" alt=""></a></li>
+          <li><a href="./index.html"><img src="./image/profile/pro10.PNG" alt=""></a></li>
+          <li><a href="./index.html"><img src="./image/profile/pro11.PNG" alt=""></a></li>
+          <li><a href="./index.html"><img src="./image/profile/pro12.PNG" alt=""></a></li>
+          <li><hr><a href="./index.html"><img src="./image/profile/pro13.PNG" alt=""></a></li>
+          <li><hr><a href="./index.html"><img src="./image/profile/pro14.PNG" alt=""></a></li>
         </ul>
         </nav>
     </div>
@@ -64,20 +66,22 @@
     <nav class="off_nav">
       <img class="logo_img2" src="./image/ylogo.PNG" alt="" onClick="reload()">
       <ul>
-        <li><a href="./index.html" onClick="reload()"><img src="./image/side/side1.PNG" alt="홈"></a></li>
+        <li><a href="./index.html"><img src="./image/side/side1.PNG" alt="홈"></a></li>
         <li><a href="./feed.html"><img src="./image/side/side2.PNG" alt="구독"></a></li>
-        <li><a href="#"><img src="./image/side/side3.PNG" alt="내페이지"></a></li>
-        <li><a href="#"><img src="./image/side/side4.PNG" alt="시청기록"></a></li>
-        <li><a href="#"><img src="./image/side/side5.PNG" alt="재생목록"></a></li>
-        <li><a href="#"><img src="./image/side/side6.PNG" alt="내동영상"></a></li>
-        <li><a href="#"><img src="./image/side/side7.PNG" alt="나중에볼동영상"></a></li>
-        <li><a href="#"><img src="./image/side/side8.PNG" alt="좋아요표시한동영상"></a></li>
-        <li><a href="#"><img src="./image/side/side9.PNG" alt="구독"></a></li>
-        <li><a href="#"><img src="./image/side/side10.PNG" alt="보다BODA"></a></li>
-        <li><a href="#"><img src="./image/side/side11.PNG" alt=""></a></li>
+        <li><a href="./index.html"><img src="./image/side/side3.PNG" alt="내페이지"></a></li>
+        <li><a href="./index.html"><img src="./image/side/side4.PNG" alt="시청기록"></a></li>
+        <li><a href="./index.html"><img src="./image/side/side5.PNG" alt="재생목록"></a></li>
+        <li><a href="./index.html"><img src="./image/side/side6.PNG" alt="내동영상"></a></li>
+        <li><a href="./index.html"><img src="./image/side/side7.PNG" alt="나중에볼동영상"></a></li>
+        <li><a href="./index.html"><img src="./image/side/side8.PNG" alt="좋아요표시한동영상"></a></li>
+        <li><a href="./index.html"><img src="./image/side/side9.PNG" alt="구독"></a></li>
+        <li><a href="./feed.html"><img src="./image/side/side10.PNG" alt="보다BODA"></a></li>
+        <li><a href="./feed.html"><img src="./image/side/sf1.PNG" alt="SBS뉴스"></a></li>
+        <li><a href="./feed.html"><img src="./image/side/sf2.PNG" alt="MBCNEWS"></a></li>
+        <li><a href="./feed.html"><img src="./image/side/sf3.PNG" alt="정서불안김햄찌"></a></li>
       </ul>
     </nav>
-    <!-- 위부분은 메인페이지에서 sidenav만 제거 후 최신화예정-->
+    <!-- 위부분은 메인페이지에서 sidenav만 제거 후 최신화-->
     
     <section class="player" id="plt">
       <article class="video">
@@ -94,6 +98,7 @@
         >
       </iframe>
       </article>
+
       <!--인포부분 no1-->
       <article class="info" id="info">
         <p class="infot">무슬림이 돼지고기를 안 먹는 진짜 이유(우월감..?)ㅣ역사를 보다 EP.61</p>  
@@ -107,10 +112,10 @@
           <button class="feedbtn" type="button">구독</button>
           </div>
           <div class="infobtlists2">
-          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt">1</p></button>
+          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt" id="likecnt"></p></button>
           <button class="hatebtn" type="button"><i class="fa-regular fa-thumbs-down"></i></button>
           <button class="sharebtn" type="button"><i class="fa-solid fa-share"></i><p>공유</p> </button>
-          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>오프라인저장</p></button>
+          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>&nbsp;&nbsp;오프라인저장</p></button>
           <button class="eclbtn" type="button"><i class="fa-solid fa-ellipsis"></i></button>
          </div>
         </div>
@@ -132,10 +137,10 @@
           <button class="feedbtn" type="button">구독</button>
           </div>
           <div class="infobtlists2">
-          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt">1</p></button>
+          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt" id="likecnt"></p></button>
           <button class="hatebtn" type="button"><i class="fa-regular fa-thumbs-down"></i></button>
           <button class="sharebtn" type="button"><i class="fa-solid fa-share"></i><p>공유</p> </button>
-          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>오프라인저장</p></button>
+          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>&nbsp;&nbsp;오프라인저장</p></button>
           <button class="eclbtn" type="button"><i class="fa-solid fa-ellipsis"></i></button>
          </div>
         </div>
@@ -147,21 +152,21 @@
       </article>
       <!--인포부분 no3-->
       <article class="info" id="info3">
-        <p class="infot">"일부러 떼고 먹었는데"…가장 건강한 음식 선정 '반전' / SBS / 오클릭</p>  
+        <p class="infot">"여기 차도 아닌가요?" 아찔한 인도 질주 (2025.07.27/뉴스데스크/MBC충북)</p>  
         <div class="infobtlist">
           <div class="infobtlists1">
           <img src="./image/profile/pro_mbc.PNG" alt="">
           <div>
-            <p class="infoname">SBS 뉴스</p>
-            <p class="infonum">구독자 495만명</p>
+            <p class="infoname">MBC뉴스</p>
+            <p class="infonum">구독자 588만명</p>
           </div>
           <button class="feedbtn" type="button">구독</button>
           </div>
           <div class="infobtlists2">
-          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt">1</p></button>
+          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt" id="likecnt"></p></button>
           <button class="hatebtn" type="button"><i class="fa-regular fa-thumbs-down"></i></button>
           <button class="sharebtn" type="button"><i class="fa-solid fa-share"></i><p>공유</p> </button>
-          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>오프라인저장</p></button>
+          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>&nbsp;&nbsp;오프라인저장</p></button>
           <button class="eclbtn" type="button"><i class="fa-solid fa-ellipsis"></i></button>
          </div>
         </div>
@@ -171,7 +176,133 @@
         <a href="#"> #MBC뉴스 #뉴스데스크 #MBC</a>
         <p>지역사 채널의 동영상 링크 (   • "여기 차도 아닌가요?" 아찔한 인도 질주)</p>
       </article>
-
+      <!--인포부분 no4-->
+      <article class="info" id="info4">
+        <p class="infot">야근의 시발점</p>  
+        <div class="infobtlist">
+          <div class="infobtlists1">
+          <img src="./image/profile/pro_khj.PNG" alt="">
+          <div>
+            <p class="infoname">정서불안 김햄찌</p>
+            <p class="infonum">구독자 48.5만명</p>
+          </div>
+          <button class="feedbtn" type="button">구독</button>
+          </div>
+          <div class="infobtlists2">
+          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt" id="likecnt"></p></button>
+          <button class="hatebtn" type="button"><i class="fa-regular fa-thumbs-down"></i></button>
+          <button class="sharebtn" type="button"><i class="fa-solid fa-share"></i><p>공유</p> </button>
+          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>&nbsp;&nbsp;오프라인저장</p></button>
+          <button class="eclbtn" type="button"><i class="fa-solid fa-ellipsis"></i></button>
+         </div>
+        </div>
+      </article>
+      <article class="infotext" id="infotext4">
+        <p>조회수 90만회  4주 전</p>
+        <a href="#">#광고 #협찬</a>
+        <p>오늘도 열일 중인 해씨들을 위해 앞니 갈고 준비햄!</p>
+      </article>
+      <!--인포부분 no5-->
+      <article class="info" id="info5">
+        <p class="infot">버터덕후의 쿠팡 버터 추천템 12개</p>  
+        <div class="infobtlist">
+          <div class="infobtlists1">
+          <img src="./image/profile/pro_bbd.PNG" alt="">
+          <div>
+            <p class="infoname">빵딘 Breadin</p>
+            <p class="infonum">구독자 10.2만명</p>
+          </div>
+          <button class="feedbtn" type="button">구독</button>
+          </div>
+          <div class="infobtlists2">
+          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt" id="likecnt"></p></button>
+          <button class="hatebtn" type="button"><i class="fa-regular fa-thumbs-down"></i></button>
+          <button class="sharebtn" type="button"><i class="fa-solid fa-share"></i><p>공유</p> </button>
+          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>&nbsp;&nbsp;오프라인저장</p></button>
+          <button class="eclbtn" type="button"><i class="fa-solid fa-ellipsis"></i></button>
+         </div>
+        </div>
+      </article>
+      <article class="infotext" id="infotext5">
+        <p>조회수 30만회  1개월 전  12개 제품</p>
+        <p>빵딩이들~
+          오늘은 100% 내돈내산!🧈버터 덕후로서 꼭 찍어보고 싶었던 버터 추천 영상을 가지고 왔어요!
+          버터 종류부터 추천까지 알차게 담아왔으니 이번 영상도 재밌게 봐주시고
+        </p>
+      </article>
+      <!--인포부분 no6-->
+      <article class="info" id="info6">
+        <p class="infot">호우, 이대로 좋은가?</p>  
+        <div class="infobtlist">
+          <div class="infobtlists1">
+          <img src="./image/profile/pro_cjs.PNG" alt="">
+          <div>
+            <p class="infoname">충주시</p>
+            <p class="infonum">구독자 86.8만명</p>
+          </div>
+          <button class="feedbtn" type="button">구독</button>
+          </div>
+          <div class="infobtlists2">
+          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt" id="likecnt"></p></button>
+          <button class="hatebtn" type="button"><i class="fa-regular fa-thumbs-down"></i></button>
+          <button class="sharebtn" type="button"><i class="fa-solid fa-share"></i><p>공유</p> </button>
+          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>&nbsp;&nbsp;오프라인저장</p></button>
+          <button class="eclbtn" type="button"><i class="fa-solid fa-ellipsis"></i></button>
+         </div>
+        </div>
+      </article>
+      <article class="infotext" id="infotext6">
+        <p>조회수 87만회  1일 전</p>
+        <a href="#">#충주맨 #폭우 #공무원</a>
+        <p>공무원 호우 vlog
+          ▶ 매주 화 오후 6시 공개</p>
+      </article>
+      <!--인포부분 no7-->
+      <article class="info" id="info7">
+        <p class="infot">물만 마셔도 살찌는 타입.mp4</p>  
+        <div class="infobtlist">
+          <div class="infobtlists1">
+          <img src="./image/profile/pro_khj.PNG" alt="">
+          <div>
+            <p class="infoname">정서불안 김햄찌</p>
+            <p class="infonum">구독자 48.5만명</p>
+          </div>
+          <button class="feedbtn" type="button">구독</button>
+          </div>
+          <div class="infobtlists2">
+          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt" id="likecnt"></p></button>
+          <button class="hatebtn" type="button"><i class="fa-regular fa-thumbs-down"></i></button>
+          <button class="sharebtn" type="button"><i class="fa-solid fa-share"></i><p>공유</p> </button>
+          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>&nbsp;&nbsp;오프라인저장</p></button>
+          <button class="eclbtn" type="button"><i class="fa-solid fa-ellipsis"></i></button>
+         </div>
+        </div>
+      </article>
+      <!--인포부분 no8-->
+      <article class="info" id="info8">
+        <p class="infot">대박 웃긴 영상만 모음집 4탄! ㅋㅋㅋㅋㅋㅋ</p>  
+        <div class="infobtlist">
+          <div class="infobtlists1">
+          <img src="./image/profile/pro_gtum.PNG" alt="">
+          <div>
+            <p class="infoname">깃털유머</p>
+            <p class="infonum">구독자 72만명</p>
+          </div>
+          <button class="feedbtn" type="button">구독</button>
+          </div>
+          <div class="infobtlists2">
+          <button class="likebtn" type="button"><i class="fa-regular fa-thumbs-up"></i><p class="likecnt" id="likecnt"></p></button>
+          <button class="hatebtn" type="button"><i class="fa-regular fa-thumbs-down"></i></button>
+          <button class="sharebtn" type="button"><i class="fa-solid fa-share"></i><p>공유</p> </button>
+          <button class="downbtn" type="button"><i class="fa-solid fa-download"></i><p>&nbsp;&nbsp;오프라인저장</p></button>
+          <button class="eclbtn" type="button"><i class="fa-solid fa-ellipsis"></i></button>
+         </div>
+        </div>
+      </article>
+      <article class="infotext" id="infotext8">
+        <p>조회수 32만회  2개월 전 </p>
+        <a href="#">#웃긴썰 #웃긴영상 #웃긴댓글 #유머글 #웃긴숏츠 #웃긴더빙 #웃참 #깃털유머 #유머글 #유머 #유머영상</a>
+      </article>
       <!--댓글 입력부분 -->
       <article class="comment" id="comment">
         <div class="commentcount"><p>댓글</p></div>
@@ -182,12 +313,6 @@
         </div>
         <div class="commentlist" id="commentlist">
           <ul class="commentul" id="commentul">
-             <li>
-              <img class="rimg" src="./image/profile.PNG">
-              <div class ="rdiv"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-              <p class ="rp">css 직접입력</p>
-              <p class ="rp">첫번째서만 보이는 댓글</p>
-            </li>
           </ul>
           <ul class="commentul2" id="commentul2">
             <li id="comli1">
@@ -217,8 +342,11 @@
            <p class="playlist_text2">보다 BODA</p>
            <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
           </div>
+          <div class="playlistdot">
+            <i class="fa-solid fa-ellipsis-vertical" id="maini"></i>
+          </div>
         </div>
-                <div class="play_item">
+        <div class="play_item">
           <img class="playlist_img" src="./image/mainthumbnail/thumbnail1.jpg" alt="" >
           <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
           muted="1"></video>
@@ -227,9 +355,12 @@
            <p class="playlist_text2">보다 BODA</p>
            <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
           </div>
+          <div class="playlistdot">
+            <i class="fa-solid fa-ellipsis-vertical" id="maini"></i>
+          </div>
         </div>
         <div class="play_item">
-          <img class="playlist_img" src="./image/mainthumbnail/thumbnail3.jpg" alt="" >
+          <img class="playlist_img" src="./image/mainthumbnail/thumbnail1.jpg" alt="" >
           <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
           muted="1"></video>
           <div class="playlistinfo">
@@ -237,9 +368,12 @@
            <p class="playlist_text2">보다 BODA</p>
            <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
           </div>
+          <div class="playlistdot">
+            <i class="fa-solid fa-ellipsis-vertical" id="maini"></i>
+          </div>
         </div>
         <div class="play_item">
-          <img class="playlist_img" src="./image/mainthumbnail/thumbnail3.jpg" alt="" >
+          <img class="playlist_img" src="./image/mainthumbnail/thumbnail1.jpg" alt="" >
           <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
           muted="1"></video>
           <div class="playlistinfo">
@@ -247,9 +381,12 @@
            <p class="playlist_text2">보다 BODA</p>
            <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
           </div>
+          <div class="playlistdot">
+            <i class="fa-solid fa-ellipsis-vertical" id="maini"></i>
+          </div>
         </div>
         <div class="play_item">
-          <img class="playlist_img" src="./image/mainthumbnail/thumbnail3.jpg" alt="" >
+          <img class="playlist_img" src="./image/mainthumbnail/thumbnail1.jpg" alt="" >
           <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
           muted="1"></video>
           <div class="playlistinfo">
@@ -257,9 +394,12 @@
            <p class="playlist_text2">보다 BODA</p>
            <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
           </div>
+          <div class="playlistdot">
+            <i class="fa-solid fa-ellipsis-vertical" id="maini"></i>
+          </div>
         </div>
         <div class="play_item">
-          <img class="playlist_img" src="./image/mainthumbnail/thumbnail3.jpg" alt="" >
+          <img class="playlist_img" src="./image/mainthumbnail/thumbnail1.jpg" alt="" >
           <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
           muted="1"></video>
           <div class="playlistinfo">
@@ -267,47 +407,10 @@
            <p class="playlist_text2">보다 BODA</p>
            <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
           </div>
-        </div>
-        <div class="play_item">
-          <img class="playlist_img" src="./image/mainthumbnail/thumbnail3.jpg" alt="" >
-          <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
-          muted="1"></video>
-          <div class="playlistinfo">
-           <p class="playlist_text1">잠들기 전에 들으면 저절로 과학을 완전 마스터하게 되는 이야기들 (불면증 치료 과학 ASMR 몰아보기)</p>
-           <p class="playlist_text2">보다 BODA</p>
-           <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
+          <div class="playlistdot">
+            <i class="fa-solid fa-ellipsis-vertical" id="maini"></i>
           </div>
-        </div>
-        <div class="play_item">
-          <img class="playlist_img" src="./image/mainthumbnail/thumbnail3.jpg" alt="" >
-          <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
-          muted="1"></video>
-          <div class="playlistinfo">
-           <p class="playlist_text1">잠들기 전에 들으면 저절로 과학을 완전 마스터하게 되는 이야기들 (불면증 치료 과학 ASMR 몰아보기)</p>
-           <p class="playlist_text2">보다 BODA</p>
-           <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
-          </div>
-        </div>
-        <div class="play_item">
-          <img class="playlist_img" src="./image/mainthumbnail/thumbnail3.jpg" alt="" >
-          <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
-          muted="1"></video>
-          <div class="playlistinfo">
-           <p class="playlist_text1">잠들기 전에 들으면 저절로 과학을 완전 마스터하게 되는 이야기들 (불면증 치료 과학 ASMR 몰아보기)</p>
-           <p class="playlist_text2">보다 BODA</p>
-           <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
-          </div>
-        </div>
-        <div class="play_item">
-          <img class="playlist_img" src="./image/mainthumbnail/thumbnail3.jpg" alt="" >
-          <video class="playlist_video" src="./image/mainvideo/videoplay1.mp4" autoplay="1" 
-          muted="1"></video>
-          <div class="playlistinfo">
-           <p class="playlist_text1">잠들기 전에 들으면 저절로 과학을 완전 마스터하게 되는 이야기들 (불면증 치료 과학 ASMR 몰아보기)</p>
-           <p class="playlist_text2">보다 BODA</p>
-           <p class="playlist_text3">조회수 5.3만회 •12시간 전 새 동영상</p>
-          </div>
-        </div>
+        </div>        
       </article>
     </section>
   <script src="cyou.js"></script>
