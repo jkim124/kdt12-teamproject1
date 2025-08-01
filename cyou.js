@@ -1,11 +1,11 @@
 const loc = window.location.search;
 const videonum = document.getElementById("ply");
 const texta = document.querySelector("#commenttext");
+const profilehead = document.getElementById("profile_head");
+const profilebutton = document.getElementById("profile_bt");
 
 switch (loc) {
   case "?video=1":
-    // document.querySelector("#ply").src =
-    //   "https://www.youtube.com/embed/CP8jRf1XC48?autoplay=1&mute=1";
     document.querySelector("#ply").src =
       "https://www.youtube.com/embed/CP8jRf1XC48?autoplay=1&mute=0";
     const videoinfo = document.querySelector("#info");
@@ -69,6 +69,14 @@ switch (loc) {
     videoinfo8.classList.add("infoblock");
     videoinfofo8.classList.add("infoblock");
     break;
+  case "?video=9":
+    document.querySelector("#ply").src =
+      "https://www.youtube.com/embed/O9U65Ik4GrU?autoplay=1&mute=0";
+    const videoinfo9 = document.querySelector("#info9");
+    const videoinfofo9 = document.querySelector("#infotext9");
+    videoinfo9.classList.add("infoblock");
+    videoinfofo9.classList.add("infoblock");
+    break;
   default:
     console.log("입력값이 없어요");
 }
@@ -77,8 +85,7 @@ function reload() {
   (location || window.location || document.location).reload();
   console.log("리로드!!");
 }
-const profilehead = document.getElementById("profile_head");
-const profilebutton = document.getElementById("profile_bt");
+
 profilebutton.addEventListener("change", function () {
   if (this.checked) {
     profilehead.style.display = "none";
@@ -98,7 +105,7 @@ try {
     }
   });
 } catch (error) {
-  console.error("텍스트에어리어 확장 메인페이지에선 동작안함"); // 에러 메시지 출력
+  console.error("텍스트에어리어 확장 메인페이지에선 동작안함");
 }
 
 try {
@@ -111,7 +118,113 @@ try {
     }
   });
 } catch (error) {
-  console.error("플레이스홀더리셋 메인페이지에선 동작안함"); // 에러 메시지 출력
+  console.error("플레이스홀더리셋 메인페이지에선 동작안함");
+}
+
+try {
+  const likee = document.getElementsByClassName("likebtn");
+  const hatee = document.getElementsByClassName("hatebtn");
+  let likenum = Number(
+    document.getElementsByClassName("likecnt")[Number(loc.slice(-1)) - 1]
+      .textContent
+  );
+  let lfg = 0;
+  let hfg = 0;
+  likee[Number(loc.slice(-1)) - 1].addEventListener("click", function () {
+    if (lfg == 1) {
+      //라이크버튼 오프
+      document.getElementsByClassName("likebtn")[
+        Number(loc.slice(-1)) - 1
+      ].innerHTML =
+        '<i class="fa-regular fa-thumbs-up">' +
+        "</i>" +
+        '<p class="likecnt">' +
+        "</p>";
+      lfg = 0;
+      if (likenum > 0) {
+        document.getElementsByClassName("likecnt")[
+          Number(loc.slice(-1)) - 1
+        ].textContent = likenum;
+      } else {
+        document.getElementsByClassName("likecnt")[
+          Number(loc.slice(-1)) - 1
+        ].textContent = null;
+      }
+    } else if (hfg == 1) {
+      //싫어요 버튼 on일땐 싫어요 버튼 해체
+      //좋아요 버튼 on으로
+      document.getElementsByClassName("likebtn")[
+        Number(loc.slice(-1)) - 1
+      ].innerHTML =
+        '<i class="fa-solid fa-thumbs-up">' +
+        "</i>" +
+        '<p class="likecnt">' +
+        "</p>";
+      document.getElementsByClassName("hatebtn")[
+        Number(loc.slice(-1)) - 1
+      ].innerHTML = '<i class="fa-regular fa-thumbs-down">' + "</i>";
+      lfg = 1;
+      hfg = 0;
+      document.getElementsByClassName("likecnt")[
+        Number(loc.slice(-1)) - 1
+      ].textContent = likenum + 1;
+    } else {
+      //라이크 버튼 온
+      document.getElementsByClassName("likebtn")[
+        Number(loc.slice(-1)) - 1
+      ].innerHTML =
+        '<i class="fa-solid fa-thumbs-up">' +
+        "</i>" +
+        '<p class="likecnt">' +
+        "</p>";
+      lfg = 1;
+      document.getElementsByClassName("likecnt")[
+        Number(loc.slice(-1)) - 1
+      ].textContent = likenum + 1;
+    }
+  });
+
+  hatee[Number(loc.slice(-1)) - 1].addEventListener("click", function () {
+    if (hfg == 1) {
+      //헤이트버튼 오프
+      document.getElementsByClassName("hatebtn")[
+        Number(loc.slice(-1)) - 1
+      ].innerHTML = '<i class="fa-regular fa-thumbs-down">' + "</i>";
+      hfg = 0;
+    } else if (lfg == 1) {
+      //좋아요 버튼 on일땐 좋아요 버튼 해체
+      //싫어요 버튼 on
+      document.getElementsByClassName("hatebtn")[
+        Number(loc.slice(-1)) - 1
+      ].innerHTML = '<i class="fa-solid fa-thumbs-down">' + "</i>";
+      document.getElementsByClassName("likebtn")[
+        Number(loc.slice(-1)) - 1
+      ].innerHTML =
+        '<i class="fa-regular fa-thumbs-up">' +
+        "</i>" +
+        '<p class="likecnt">' +
+        "</p>";
+      hfg = 1;
+      lfg = 0;
+      if (likenum > 0) {
+        document.getElementsByClassName("likecnt")[
+          Number(loc.slice(-1)) - 1
+        ].textContent = likenum;
+      } else {
+        document.getElementsByClassName("likecnt")[
+          Number(loc.slice(-1)) - 1
+        ].textContent = null;
+      }
+    } else {
+      //헤이트 버튼 온
+      document.getElementsByClassName("hatebtn")[
+        Number(loc.slice(-1)) - 1
+      ].innerHTML = '<i class="fa-solid fa-thumbs-down">' + "</i>";
+      hfg = 1;
+    }
+  });
+} catch (error) {
+  console.error("좋아요싫어요 버튼 메인페이지에선 동작안함");
 }
 
 function commentsb() {
