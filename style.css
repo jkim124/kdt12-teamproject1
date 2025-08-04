@@ -644,22 +644,21 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 2;
-  text-overflow: ellipsis;
   font-size: 14px;
-  height: 42px;
   color: white;
 }
 .playlist_text2 {
+  margin-top: 3px;
+  margin-bottom: 3px;
   font-size: 12px;
-  height: 28px;
   overflow: hidden;
-  color: white;
+  color: darkgrey;
 }
 .playlist_text3 {
   font-size: 12px;
   height: 24.5px;
   overflow: hidden;
-  color: white;
+  color: darkgray;
 }
 .playlistdot {
   color: white;
