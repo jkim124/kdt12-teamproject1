@@ -729,9 +729,9 @@ body {
   .player {
     grid-template-columns: 100%;
   }
-  .infobtlists2 {
+  /*.infobtlists2 {
     display: none;
-  }
+  }*/
   .video {
     margin-right: 0px;
   }
