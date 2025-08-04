@@ -1,5 +1,8 @@
 # kdt12-teamproject1 (YouTube Clone)
 
+프로젝트 개요
+ 유튜브 영상 클론 및 인터랙션 구현
+
      진행사항
 
 8-4
