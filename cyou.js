@@ -248,6 +248,7 @@ function commentsb() {
     "</li>" +
     document.querySelector("#commentul").innerHTML;
   texta.placeholder = "댓글 추가...";
+  texta.style.height = "auto";
 }
 
 function refresharea() {
